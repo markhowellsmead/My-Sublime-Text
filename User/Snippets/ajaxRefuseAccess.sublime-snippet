@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[public function ajaxRefuseAccess()
+{
+    \$this->sendResponse(array(
+        'message' => __('Sorry, you must be logged in to access this feature.', \$this->key),
+        'status' => 'error',
+        'code' => 'no-ajax-access',
+    ));
+}
+]]></content>
+	<tabTrigger>ajaxRefuseAccess</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

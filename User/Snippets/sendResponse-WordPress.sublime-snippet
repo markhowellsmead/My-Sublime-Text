@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[private function sendResponse(\$atts)
+{
+    if (defined('DOING_AJAX') && DOING_AJAX) {
+        \$this->sendAjaxResponse(\$atts);
+    } else {
+        wp_die(\$atts['message']);
+    }
+}]]></content>
+	<tabTrigger>sendResponse</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

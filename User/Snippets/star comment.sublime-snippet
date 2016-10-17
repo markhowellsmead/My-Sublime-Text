@@ -1,0 +1,9 @@
+<snippet>
+	<content>/**
+* ${1:Title}
+* ${2:Description}
+*
+* @since ${3:Date} (mhm)
+*/</content>
+<tabTrigger>/*</tabTrigger> -->
+</snippet>

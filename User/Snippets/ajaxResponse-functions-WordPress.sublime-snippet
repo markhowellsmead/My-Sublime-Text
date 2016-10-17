@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[public function ajaxRefuseAccess()
+{
+    \$this->sendResponse(array(
+        'message' => __('Sorry, you must be logged in to access this feature.', \$this->key),
+        'status' => 'error',
+        'code' => 'no-ajax-access',
+    ));
+}
+
+private function sendResponse(\$atts)
+{
+    if (defined('DOING_AJAX') && DOING_AJAX) {
+        \$this->sendAjaxResponse(\$atts);
+    } else {
+        wp_die(\$atts['message']);
+    }
+}
+
+private function sendAjaxResponse(\$atts)
+{
+    header('Content-Type: application/json');
+    die(json_encode([
+        'status' => \$atts['status'],
+        'code' => \$atts['code'],
+        'message' => \$atts['message'],
+    ]));
+}
+]]></content>
+	<tabTrigger>ajaxResponse-functions-WordPress</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

@@ -1,0 +1,38 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"1337 Color Scheme",
+		"1Self",
+		"3024 Color Scheme",
+		"CSS Extended Completions",
+		"DocBlockr",
+		"Emmet",
+		"Flux Snippets",
+		"Gist",
+		"HTML Mustache",
+		"HTML-CSS-JS Prettify",
+		"HTML5",
+		"JavaScript Console",
+		"jQuery",
+		"LESS",
+		"MarkdownLight",
+		"Package Control",
+		"Phpcs",
+		"Sass",
+		"Sublime-CSS3",
+		"SublimeCodeIntel",
+		"Syntax Highlighting for Sass",
+		"Theme - LP",
+		"Theme - Soda",
+		"TYPO3 Fluid Snippets",
+		"WordPress"
+	],
+	"repositories":
+	[
+		"https://github.com/i-akhmadullin/Sublime-CSS3"
+	]
+}
